@@ -16,7 +16,6 @@
 		9D2DFD6C24A2537200EECE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2DFD6A24A2537200EECE43 /* LaunchScreen.storyboard */; };
 		9D2DFD7724A2537300EECE43 /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD7624A2537300EECE43 /* Final_ProjectTests.swift */; };
 		9D2DFD8224A2537300EECE43 /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD8124A2537300EECE43 /* Final_ProjectUITests.swift */; };
-		F1733F8824A287690025EBF9 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F1733F8724A287680025EBF9 /* Icon-120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D2DFD5924A2536D00EECE43 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2DFD5924A2536D00EECE43 /* Help Me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Help Me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2DFD5E24A2536D00EECE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D2DFD6024A2536D00EECE43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +51,6 @@
 		9D2DFD7D24A2537300EECE43 /* Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2DFD8124A2537300EECE43 /* Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		9D2DFD8324A2537300EECE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1733F8724A287680025EBF9 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "../../Desktop/Icon-120.png"; sourceTree = "<group>"; };
-		F1733F8924A2876D0025EBF9 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,38 +81,36 @@
 		9D2DFD5024A2536D00EECE43 = {
 			isa = PBXGroup;
 			children = (
-				9D2DFD5B24A2536D00EECE43 /* Final Project */,
+				9D2DFD5B24A2536D00EECE43 /* FInal Project */,
 				9D2DFD7524A2537300EECE43 /* Final ProjectTests */,
 				9D2DFD8024A2537300EECE43 /* Final ProjectUITests */,
 				9D2DFD5A24A2536D00EECE43 /* Products */,
-				F1733F8724A287680025EBF9 /* Icon-120.png */,
 			);
 			sourceTree = "<group>";
 		};
 		9D2DFD5A24A2536D00EECE43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D2DFD5924A2536D00EECE43 /* Final Project.app */,
+				9D2DFD5924A2536D00EECE43 /* Help Me!.app */,
 				9D2DFD7224A2537300EECE43 /* Final ProjectTests.xctest */,
 				9D2DFD7D24A2537300EECE43 /* Final ProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D2DFD5B24A2536D00EECE43 /* Final Project */ = {
+		9D2DFD5B24A2536D00EECE43 /* FInal Project */ = {
 			isa = PBXGroup;
 			children = (
 				9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */,
 				9D2DFD5E24A2536D00EECE43 /* SceneDelegate.swift */,
 				9D2DFD6024A2536D00EECE43 /* ViewController.swift */,
 				9D2DFD6224A2536D00EECE43 /* Main.storyboard */,
-				F1733F8924A2876D0025EBF9 /* Icon-120.png */,
 				9D2DFD6824A2537200EECE43 /* Assets.xcassets */,
 				9D2DFD6A24A2537200EECE43 /* LaunchScreen.storyboard */,
 				9D2DFD6D24A2537200EECE43 /* Info.plist */,
 				9D2DFD6524A2536D00EECE43 /* Final_Project.xcdatamodeld */,
 			);
-			path = "Final Project";
+			path = "FInal Project";
 			sourceTree = "<group>";
 		};
 		9D2DFD7524A2537300EECE43 /* Final ProjectTests */ = {
@@ -153,7 +148,7 @@
 			);
 			name = "Final Project";
 			productName = "Final Project";
-			productReference = 9D2DFD5924A2536D00EECE43 /* Final Project.app */;
+			productReference = 9D2DFD5924A2536D00EECE43 /* Help Me!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9D2DFD7124A2537300EECE43 /* Final ProjectTests */ = {
@@ -240,7 +235,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1733F8824A287690025EBF9 /* Icon-120.png in Resources */,
 				9D2DFD6C24A2537200EECE43 /* LaunchScreen.storyboard in Resources */,
 				9D2DFD6924A2537200EECE43 /* Assets.xcassets in Resources */,
 				9D2DFD6424A2536D00EECE43 /* Main.storyboard in Resources */,
@@ -446,12 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Final Project/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yuki.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Help Me!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,12 +458,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Final Project/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yuki.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Help Me!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

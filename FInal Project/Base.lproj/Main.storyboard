@@ -58,6 +58,9 @@ and we are here to help you however we can. </string>
                                     <navigationItem title="Help Me " id="MIb-kf-MW3">
                                         <barButtonItem key="leftBarButtonItem" title="Checklist " id="2Ym-R7-nDu">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="XXj-xm-u9V" kind="show" id="L8j-IY-jil"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Resources " id="tPm-gX-0u3">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,10 +88,56 @@ and we are here to help you however we can. </string>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources View Controller-->
+        <scene sceneID="GA2-hS-Wdv">
+            <objects>
+                <viewController title="Resources View Controller" id="XXj-xm-u9V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NwX-yC-xho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-Ty-YyE">
+                                <rect key="frame" x="0.0" y="63" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.075728176820000007" blue="0.31583881650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Help Me " id="SKi-hW-vgE">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="DcN-pY-bac">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="POg-oL-iqi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Resources " id="rog-rF-uSP">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-wY-Amu">
+                                <rect key="frame" x="186" y="711" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Zz-hp-K9I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCq-e6-9JK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEx-OU-DiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="819"/>
+        </scene>
+        <!--Checklist View Controller-->
         <scene sceneID="zjp-jn-gSG">
             <objects>
-                <viewController id="7Gh-zB-T5A" sceneMemberID="viewController">
+                <viewController title="Checklist View Controller" id="7Gh-zB-T5A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbb-lb-hAv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +178,9 @@ and we are here to help you however we can. </string>
             <point key="canvasLocation" x="896" y="129"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="POg-oL-iqi"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
