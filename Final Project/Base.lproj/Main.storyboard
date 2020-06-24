@@ -7,17 +7,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-yd-xY1">
-                                <rect key="frame" x="-5" y="53" width="424" height="56"/>
-                                <color key="barTintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We hope the resources on this app will prove useful to you in your situation. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-Ux-wPL">
+                                <rect key="frame" x="96" y="356" width="231" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To contact a representative to guide you through this process click here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Ji-XZb">
+                                <rect key="frame" x="87" y="459" width="240" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-9U-bB7">
+                                <rect key="frame" x="174.5" y="495" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Call Now ">
+                                    <color key="titleColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-LB-P7o">
+                                <rect key="frame" x="20" y="261" width="373" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">We want you to know that you are not alone 
+and we are here to help you however we can. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-yd-xY1">
+                                <rect key="frame" x="0.0" y="60" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.07572817682018651" blue="0.31583881648103651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
@@ -35,78 +68,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Welcome to the Help Me App " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uCt-Dz-Xsj">
-                                <rect key="frame" x="87" y="150" width="240" height="68"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="RRC-S4-Gau"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We hope the resources on this app will prove useful to you in your situation. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-Ux-wPL">
-                                <rect key="frame" x="87" y="356" width="240" height="73"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="KMe-Pc-jzE"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="To contact a representative to guide you through this process click here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Ji-XZb">
-                                <rect key="frame" x="87" y="459" width="240" height="66"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="KI6-cp-zz7"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-9U-bB7">
-                                <rect key="frame" x="174.5" y="495" width="65" height="30"/>
-                                <state key="normal" title="Call Now ">
-                                    <color key="titleColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-120.png" translatesAutoresizingMaskIntoConstraints="NO" id="KgA-iz-x1a">
-                                <rect key="frame" x="40" y="546" width="334" height="247"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="d5b-4s-9L9"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We want you to know that you are not alone and we are here to help you however we can. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-LB-P7o">
-                                <rect key="frame" x="40" y="-25" width="685" height="563"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Help Me app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-JP-z5M">
+                                <rect key="frame" x="96" y="223" width="222" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0Fm-rw-auY"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="leading" secondItem="uCt-Dz-Xsj" secondAttribute="leading" id="14S-Ir-mD5"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="top" secondItem="dnM-Ux-wPL" secondAttribute="bottom" constant="30" id="4dm-KM-YyI"/>
-                            <constraint firstItem="nJs-yd-xY1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="7lH-Rh-AlT"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aed-Xd-wWW"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="nJs-yd-xY1" secondAttribute="centerX" id="BzI-qr-9aw"/>
-                            <constraint firstItem="dnM-Ux-wPL" firstAttribute="centerX" secondItem="nJs-yd-xY1" secondAttribute="centerX" id="Fma-Zb-7Ob"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="djo-Ji-XZb" secondAttribute="centerX" id="GUo-ue-hGC"/>
-                            <constraint firstItem="uCt-Dz-Xsj" firstAttribute="centerX" secondItem="nJs-yd-xY1" secondAttribute="centerX" id="Ijc-7w-Wdd"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="leading" secondItem="dnM-Ux-wPL" secondAttribute="leading" id="Ktp-Va-2cT"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="uCt-Dz-Xsj" secondAttribute="centerX" id="Odn-e6-Skc"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="top" secondItem="djo-Ji-XZb" secondAttribute="bottom" constant="21" id="VWu-GS-dOm"/>
-                            <constraint firstItem="uCt-Dz-Xsj" firstAttribute="top" secondItem="nJs-yd-xY1" secondAttribute="bottom" constant="41" id="WIp-Mz-bgy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KgA-iz-x1a" secondAttribute="bottom" constant="15" id="gR5-kr-FNL"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="GVJ-9U-bB7" secondAttribute="centerX" id="h30-7w-KvR"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="centerX" secondItem="nJs-yd-xY1" secondAttribute="centerX" id="hVv-fI-uIQ"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="iLb-Du-u8r"/>
-                            <constraint firstItem="KgA-iz-x1a" firstAttribute="centerX" secondItem="dnM-Ux-wPL" secondAttribute="centerX" id="mx6-Uh-fGh"/>
-                            <constraint firstItem="djo-Ji-XZb" firstAttribute="bottom" secondItem="GVJ-9U-bB7" secondAttribute="bottom" id="qJz-97-1Dh"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="pGq-LP-Liy"/>
@@ -123,10 +93,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tqP-cR-Dri">
+                                <rect key="frame" x="20" y="137" width="374" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0c-V4-sGI">
-                                <rect key="frame" x="0.0" y="74" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="62" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.081565613440755302" blue="0.32821756994542062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
@@ -144,10 +118,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tqP-cR-Dri">
-                                <rect key="frame" x="20" y="137" width="374" height="660"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2GU-Qc-GPO"/>
@@ -156,12 +126,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYe-Nh-pZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.94202898550736" y="128.57142857142856"/>
+            <point key="canvasLocation" x="896" y="129"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="Icon-120.png" width="90" height="87.75"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
     </resources>
 </document>
