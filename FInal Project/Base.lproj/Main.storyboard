@@ -10,25 +10,17 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We hope the resources on this app will prove useful to you in your situation. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-Ux-wPL">
-                                <rect key="frame" x="96" y="356" width="231" height="73"/>
+                                <rect key="frame" x="66" y="342" width="290" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To contact a representative to guide you through this process click here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Ji-XZb">
-                                <rect key="frame" x="87" y="459" width="240" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-9U-bB7">
@@ -39,18 +31,18 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-LB-P7o">
-                                <rect key="frame" x="20" y="261" width="373" height="53"/>
+                                <rect key="frame" x="20" y="262" width="373" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">We want you to know that you are not alone 
 and we are here to help you however we can. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-yd-xY1">
                                 <rect key="frame" x="0.0" y="60" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="0.07572817682018651" blue="0.31583881648103651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
@@ -72,14 +64,23 @@ and we are here to help you however we can. </string>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Help Me app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-JP-z5M">
-                                <rect key="frame" x="96" y="223" width="222" height="21"/>
+                                <rect key="frame" x="100" y="195" width="222" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To contact a representative to guide you through this process click here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Ji-XZb">
+                                <rect key="frame" x="56" y="439" width="327" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="pGq-LP-Liy"/>
@@ -91,15 +92,15 @@ and we are here to help you however we can. </string>
         <!--Resources View Controller-->
         <scene sceneID="GA2-hS-Wdv">
             <objects>
-                <viewController title="Resources View Controller" id="XXj-xm-u9V" sceneMemberID="viewController">
+                <viewController title="Resources View Controller" modalPresentationStyle="fullScreen" id="XXj-xm-u9V" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NwX-yC-xho">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-Ty-YyE">
                                 <rect key="frame" x="0.0" y="63" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="0.075728176820000007" blue="0.31583881650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
@@ -119,22 +120,278 @@ and we are here to help you however we can. </string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-wY-Amu">
-                                <rect key="frame" x="186" y="711" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-wY-Amu">
+                                <rect key="frame" x="186" y="711" width="32" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZc-ch-1U5">
+                                <rect key="frame" x="144" y="282" width="132" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="I am a protestor ">
+                                    <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-Vh-kQg">
+                                <rect key="frame" x="88" y="346" width="239" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="I am the wrongfully accused"/>
+                                <connections>
+                                    <segue destination="uSr-D1-5YQ" kind="show" id="ZKi-mN-DaJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihp-Jw-hGB">
+                                <rect key="frame" x="59" y="417" width="302" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="I am a family member of the accused "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-05-owY">
+                                <rect key="frame" x="122" y="200" width="170" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Zz-hp-K9I"/>
                     </view>
                     <navigationItem key="navigationItem" id="dCq-e6-9JK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEx-OU-DiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="819"/>
+            <point key="canvasLocation" x="104" y="962"/>
+        </scene>
+        <!--WrongfullyAccusedViewController-->
+        <scene sceneID="sc1-h8-YTa">
+            <objects>
+                <viewController title="WrongfullyAccusedViewController" modalPresentationStyle="fullScreen" id="uSr-D1-5YQ" customClass="AccusedViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BW5-pD-Ael">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-YN-b9F">
+                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Resources " id="rTB-b2-b4a">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="oaC-mb-wrQ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="XXj-xm-u9V" kind="show" id="uRT-tt-sh9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a scary situation to be in, but please remember:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-Uj-hXN">
+                                <rect key="frame" x="47" y="364" width="321" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-06-24 at 4.26.41 PM" translatesAutoresizingMaskIntoConstraints="NO" id="eOo-Ti-o2Z">
+                                <rect key="frame" x="60" y="144" width="295" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are not alone " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tz-OH-9BJ">
+                                <rect key="frame" x="139" y="454" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There are more exonerations today than ever, and it's especially prevalent among black defendants." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKW-3z-0K3">
+                                <rect key="frame" x="47" y="483" width="339" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzH-7p-mk3">
+                                <rect key="frame" x="150" y="607" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Vocabulary"/>
+                                <connections>
+                                    <segue destination="tcB-Pp-cRe" kind="presentation" id="I13-jI-yQ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo5-g6-bEL">
+                                <rect key="frame" x="165" y="662" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Advice"/>
+                                <connections>
+                                    <segue destination="EQb-Oy-M0f" kind="show" id="dQh-BO-g7y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oQv-X7-pc5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ae4-RN-Ppp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDF-iv-Jtp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="962"/>
+        </scene>
+        <!--WAAdviceViewController-->
+        <scene sceneID="G87-Lh-hpK">
+            <objects>
+                <viewController title="WAAdviceViewController" modalPresentationStyle="fullScreen" id="EQb-Oy-M0f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fl7-bA-cL2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-Hn-j5G">
+                                <rect key="frame" x="0.0" y="69" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Advice For Wrongfully Accused" id="eQQ-oV-vxc">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="tIx-6o-kwc">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="uSr-D1-5YQ" kind="show" id="POZ-hU-MMF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Take the accusations seriously " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo5-DX-l3n">
+                                <rect key="frame" x="44" y="165" width="256" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Understand that you may need to spend money to get a good defense." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRF-MZ-kXD">
+                                <rect key="frame" x="44" y="194" width="291" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-oq-8Wm">
+                                <rect key="frame" x="44" y="271" width="338" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">➤ If you can, obtain a lawyer quickly before you are officially charged with the crime. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-4I-ypz">
+                                <rect key="frame" x="44" y="334" width="338" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">➤ Gather physical evidence and documents
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Obtain witness contact information if you can" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-JO-Qer">
+                                <rect key="frame" x="44" y="372" width="338" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Understand plea bargain" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wR-dy-AQq">
+                                <rect key="frame" x="44" y="422" width="338" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UDk-Y2-you"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sni-Fj-u8W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aV-j6-HWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060.8695652173915" y="1416.9642857142856"/>
+        </scene>
+        <!--VocabViewController-->
+        <scene sceneID="Cw1-Fo-bvJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cG-78-BCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="VocabViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="tcB-Pp-cRe" customClass="VocabularyViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRF-OV-bNr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cW-2y-ZAg">
+                                <rect key="frame" x="61" y="206" width="305" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Defendant (n.): a person or group being sued or accused of committing a crime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kBI-2n-47q">
+                                        <rect key="frame" x="8" y="8" width="289" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.25152504280821919" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Exoneration (n.): to clear from accusation; to free from guilt or blame. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZpN-32-HlF">
+                                        <rect key="frame" x="8" y="70" width="289" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.2540132705479452" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="False Arrest (n.): the unlawful restraint of a person’s freedom of movement." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-lH-u7b">
+                                        <rect key="frame" x="8" y="132" width="289" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.2501872859589041" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Q-va-OZW">
+                                        <rect key="frame" x="0.0" y="231" width="305" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Dismiss">
+                                            <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeVocab:" destination="tcB-Pp-cRe" eventType="touchUpInside" id="vC5-Sc-uws"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.90980392156862744" blue="0.81176470588235294" alpha="0.95098458904109584" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G0k-wx-G2g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hvn-rb-tvQ"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2063.768115942029" y="696.42857142857144"/>
         </scene>
         <!--Checklist View Controller-->
         <scene sceneID="zjp-jn-gSG">
@@ -147,7 +404,7 @@ and we are here to help you however we can. </string>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0c-V4-sGI">
                                 <rect key="frame" x="0.0" y="62" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="0.081565613440755302" blue="0.32821756994542062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
@@ -166,22 +423,25 @@ and we are here to help you however we can. </string>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="2GU-Qc-GPO"/>
                     </view>
                     <navigationItem key="navigationItem" id="qdd-Jl-Eeq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYe-Nh-pZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="128.57142857142856"/>
+            <point key="canvasLocation" x="1032" y="129"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qKL-j3-YEg"/>
-        <segue reference="io5-n4-ORK"/>
+        <segue reference="ZKi-mN-DaJ"/>
+        <segue reference="HQG-RL-8re"/>
+        <segue reference="POg-oL-iqi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="Screen Shot 2020-06-24 at 4.26.41 PM" width="834" height="478"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
     </resources>
 </document>
