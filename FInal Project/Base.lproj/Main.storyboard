@@ -540,6 +540,9 @@ and we are here to help you however we can. </string>
                                     <navigationItem title="I am an organizer" id="cbQ-73-VIN">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Lcd-XF-aoV">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="0k3-a2-hkv" kind="show" id="uIj-sc-9dg"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -555,6 +558,10 @@ and we are here to help you however we can. </string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">➤ traditional public forums: you have the right to protest on any public property so long as you're not blocking access or interfering w private prop
+=======
+                                                <string key="text">Your rights:
+➤ traditional public forums: you have the right to protest on any public property so long as you're not blocking access or interfering w private prop
+>>>>>>> Stashed changes
 ➤ Private prop owners set the rules of speech for their prop and the gov cannot control that. Basically as long as you have consent from the owner do whatever u want and the gov are in trouble if they try to do anything
 ➤ Police should be treating counter protesters and protestors equally. Allowed to separate the groups but groups should be within hearing and seeing distance
 ➤ U can photograph anything on public prop but again private prop owners make the rules
@@ -829,6 +836,7 @@ What to do if you believe your rights have been violated
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uIj-sc-9dg"/>
         <segue reference="qKL-j3-YEg"/>
         <segue reference="ZKi-mN-DaJ"/>
         <segue reference="9KW-Sp-UdL"/>
