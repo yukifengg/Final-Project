@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,46 +20,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We hope the resources on this app will prove useful to you in your situation. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-Ux-wPL">
-                                <rect key="frame" x="66" y="342" width="290" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-9U-bB7">
-                                <rect key="frame" x="174.5" y="495" width="65" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Call Now ">
-                                    <color key="titleColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-LB-P7o">
-                                <rect key="frame" x="20" y="262" width="373" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">We want you to know that you are not alone
-and we are here to help you however we can. </string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-yd-xY1">
-                                <rect key="frame" x="0.0" y="60" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-yd-xY1">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
                                 <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Help Me " id="MIb-kf-MW3">
-                                        <barButtonItem key="leftBarButtonItem" title="Checklist " id="2Ym-R7-nDu">
+                                        <barButtonItem key="leftBarButtonItem" title="Checklist " image="list.dash" catalog="system" id="2Ym-R7-nDu">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="7Gh-zB-T5A" kind="showDetail" id="BSz-mm-qE1"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Resources " id="tPm-gX-0u3">
+                                        <barButtonItem key="rightBarButtonItem" title="Resources " image="doc.on.doc" catalog="system" id="tPm-gX-0u3">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="XXj-xm-u9V" kind="show" id="HQG-RL-8re"/>
@@ -63,27 +43,84 @@ and we are here to help you however we can. </string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Help Me app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-JP-z5M">
-                                <rect key="frame" x="100" y="195" width="222" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Help Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-JP-z5M">
+                                <rect key="frame" x="0.0" y="188" width="414" height="119.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="49"/>
+                                <color key="textColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are not alone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-f9-DcN">
+                                <rect key="frame" x="131" y="377.5" width="152" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To contact a representative to guide you through this process click here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Ji-XZb">
-                                <rect key="frame" x="56" y="439" width="327" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are here to help." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8q5-PV-AMF">
+                                <rect key="frame" x="122" y="448.5" width="170.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We hope the resources on this app will prove useful to you in your situation. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLn-0p-wcy">
+                                <rect key="frame" x="40" y="519.5" width="334" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you'd like, you can contact a representative to guide you through this process:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlu-d5-iYJ">
+                                <rect key="frame" x="40" y="611" width="334" height="62.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0H-xb-W5A">
+                                <rect key="frame" x="170" y="683.5" width="74" height="30"/>
+                                <state key="normal" title="Call Now ">
+                                    <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dlu-d5-iYJ" firstAttribute="top" secondItem="iLn-0p-wcy" secondAttribute="bottom" constant="50" id="1N5-rR-Go3"/>
+                            <constraint firstItem="Fgr-JP-z5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3qy-ah-fog"/>
+                            <constraint firstItem="s0H-xb-W5A" firstAttribute="top" secondItem="Dlu-d5-iYJ" secondAttribute="bottom" constant="10" id="3vX-wB-M7J"/>
+                            <constraint firstItem="iLn-0p-wcy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="4ei-i6-I5F"/>
+                            <constraint firstAttribute="trailing" secondItem="Dlu-d5-iYJ" secondAttribute="trailing" constant="40" id="5xJ-a1-WS3"/>
+                            <constraint firstItem="Fgr-JP-z5M" firstAttribute="top" secondItem="nJs-yd-xY1" secondAttribute="bottom" constant="90" id="8Ad-kd-5uQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgr-JP-z5M" secondAttribute="trailing" id="H9t-bi-SDy"/>
+                            <constraint firstItem="cuG-f9-DcN" firstAttribute="top" secondItem="Fgr-JP-z5M" secondAttribute="bottom" constant="70" id="Ibf-RV-Ia0"/>
+                            <constraint firstItem="Dlu-d5-iYJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYv-Mx-BZa"/>
+                            <constraint firstItem="Dlu-d5-iYJ" firstAttribute="top" secondItem="iLn-0p-wcy" secondAttribute="bottom" constant="50" id="MvO-RP-s6Y"/>
+                            <constraint firstItem="s0H-xb-W5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Opt-Oj-cdm"/>
+                            <constraint firstItem="Fgr-JP-z5M" firstAttribute="top" secondItem="nJs-yd-xY1" secondAttribute="bottom" constant="90" id="PVc-7N-BWF"/>
+                            <constraint firstItem="iLn-0p-wcy" firstAttribute="top" secondItem="8q5-PV-AMF" secondAttribute="bottom" constant="50" id="Q1M-0D-Nrf"/>
+                            <constraint firstItem="nJs-yd-xY1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="SVJ-Yg-RfT"/>
+                            <constraint firstItem="8q5-PV-AMF" firstAttribute="top" secondItem="cuG-f9-DcN" secondAttribute="bottom" constant="50" id="UAp-7a-kPN"/>
+                            <constraint firstItem="cuG-f9-DcN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdl-wC-ZPU"/>
+                            <constraint firstItem="cuG-f9-DcN" firstAttribute="top" secondItem="Fgr-JP-z5M" secondAttribute="bottom" constant="70" id="jbZ-EM-mcG"/>
+                            <constraint firstItem="8q5-PV-AMF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mn8-j1-qAM"/>
+                            <constraint firstItem="nJs-yd-xY1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nlo-7o-9Mr"/>
+                            <constraint firstItem="nJs-yd-xY1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oh8-Rw-fVA"/>
+                            <constraint firstItem="iLn-0p-wcy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="paQ-0y-ZSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s0H-xb-W5A" secondAttribute="trailing" constant="170" id="qWG-D9-PRO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="pGq-LP-Liy"/>
+                    <connections>
+                        <outlet property="callMe" destination="s0H-xb-W5A" id="vIT-6V-Nn9"/>
+                        <outlet property="callMeCenter" destination="Opt-Oj-cdm" id="Mdt-i1-irb"/>
+                        <outlet property="textFour" destination="Dlu-d5-iYJ" id="Hpu-ZL-Ven"/>
+                        <outlet property="textFourCenter" destination="MYv-Mx-BZa" id="7Ak-ph-rSH"/>
+                        <outlet property="textOne" destination="cuG-f9-DcN" id="5nc-RQ-VCt"/>
+                        <outlet property="textOneCenter" destination="cdl-wC-ZPU" id="ZSl-cO-eIN"/>
+                        <outlet property="textThree" destination="iLn-0p-wcy" id="DSC-uH-c74"/>
+                        <outlet property="textThreeCenter" destination="paQ-0y-ZSP" id="eVR-pA-Icu"/>
+                        <outlet property="textTwo" destination="8q5-PV-AMF" id="Yyi-N8-KGz"/>
+                        <outlet property="textTwoCenter" destination="mn8-j1-qAM" id="iAq-St-Wir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,9 +158,9 @@ and we are here to help you however we can. </string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZc-ch-1U5">
-                                <rect key="frame" x="144" y="282" width="132" height="34"/>
+                                <rect key="frame" x="124" y="395" width="164" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="I am a protestor ">
                                     <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -132,41 +169,32 @@ and we are here to help you however we can. </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-Vh-kQg">
-                                <rect key="frame" x="88" y="346" width="239" height="35"/>
+                                <rect key="frame" x="61" y="459" width="284" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="I am the wrongfully accused"/>
                                 <connections>
                                     <segue destination="uSr-D1-5YQ" kind="show" id="ZKi-mN-DaJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihp-Jw-hGB">
-                                <rect key="frame" x="59" y="417" width="302" height="34"/>
+                                <rect key="frame" x="19" y="530" width="379" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="I am a family member of the accused "/>
                                 <connections>
                                     <segue destination="0A8-2r-Klo" kind="show" id="x0E-T3-dhS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-05-owY">
-                                <rect key="frame" x="122" y="200" width="170" height="29"/>
+                                <rect key="frame" x="102" y="310" width="210" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Link" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oSa-N1-cK1">
-                                <rect key="frame" x="90" y="779" width="240" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Zz-hp-K9I"/>
                     </view>
@@ -208,7 +236,7 @@ and we are here to help you however we can. </string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a scary situation to be in, but please remember:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-Uj-hXN">
                                 <rect key="frame" x="47" y="364" width="321" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -217,37 +245,39 @@ and we are here to help you however we can. </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are not alone " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tz-OH-9BJ">
-                                <rect key="frame" x="139" y="454" width="137" height="21"/>
+                                <rect key="frame" x="132" y="454" width="153" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There are more exonerations today than ever, and it's especially prevalent among black defendants." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKW-3z-0K3">
                                 <rect key="frame" x="47" y="483" width="339" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzH-7p-mk3">
-                                <rect key="frame" x="150" y="607" width="114" height="30"/>
+                                <rect key="frame" x="137" y="607" width="141" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="View Vocabulary"/>
                                 <connections>
                                     <segue destination="tcB-Pp-cRe" kind="presentation" id="I13-jI-yQ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo5-g6-bEL">
-                                <rect key="frame" x="165" y="662" width="84" height="30"/>
+                                <rect key="frame" x="156" y="662" width="103" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="View Advice"/>
                                 <connections>
                                     <segue destination="EQb-Oy-M0f" kind="show" id="dQh-BO-g7y"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="oQv-X7-pc5"/>
                     </view>
@@ -287,53 +317,49 @@ and we are here to help you however we can. </string>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Take the accusations seriously " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo5-DX-l3n">
-                                <rect key="frame" x="44" y="165" width="256" height="21"/>
+                                <rect key="frame" x="44" y="165" width="338" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Understand that you may need to spend money to get a good defense." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRF-MZ-kXD">
-                                <rect key="frame" x="44" y="194" width="291" height="69"/>
+                                <rect key="frame" x="44" y="194" width="338" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-oq-8Wm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ If you can, obtain a lawyer quickly before you are officially charged with the crime." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-oq-8Wm">
                                 <rect key="frame" x="44" y="271" width="338" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤ If you can, obtain a lawyer quickly before you are officially charged with the crime.
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-4I-ypz">
-                                <rect key="frame" x="44" y="334" width="338" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Gather physical evidence and documents" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-4I-ypz">
+                                <rect key="frame" x="44" y="347" width="338" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤ Gather physical evidence and documents
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Obtain witness contact information if you can" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-JO-Qer">
-                                <rect key="frame" x="44" y="372" width="338" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Understand plea bargain" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wR-dy-AQq">
-                                <rect key="frame" x="44" y="422" width="338" height="52"/>
+                                <rect key="frame" x="44" y="450" width="338" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Obtain witness contact information if you can" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-JO-Qer">
+                                <rect key="frame" x="44" y="406" width="338" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UDk-Y2-you"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sni-Fj-u8W"/>
@@ -347,7 +373,7 @@ and we are here to help you however we can. </string>
             <objects>
                 <viewController title="VocabViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="tcB-Pp-cRe" customClass="VocabularyViewController" customModule="Help_Me_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRF-OV-bNr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cW-2y-ZAg">
@@ -359,7 +385,7 @@ and we are here to help you however we can. </string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.25152504280821919" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Exoneration (n.): to clear from accusation; to free from guilt or blame. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZpN-32-HlF">
@@ -367,7 +393,7 @@ and we are here to help you however we can. </string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.2540132705479452" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="False Arrest (n.): the unlawful restraint of a person’s freedom of movement." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-lH-u7b">
@@ -375,12 +401,13 @@ and we are here to help you however we can. </string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="0.2501872859589041" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Q-va-OZW">
                                         <rect key="frame" x="0.0" y="231" width="305" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="Dismiss">
                                             <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -527,7 +554,7 @@ and we are here to help you however we can. </string>
             <objects>
                 <viewController title="Organizerprotest" id="Zfu-nH-zQd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cob-C0-aYm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="top" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-cI-TsB">
@@ -615,34 +642,25 @@ What to do if you believe your rights have been violated
             <objects>
                 <viewController title="I am a protestor" id="0k3-a2-hkv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cn4-su-vuS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What was your role?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I2-Nd-C8h">
-                                <rect key="frame" x="89" y="260" width="237" height="28"/>
+                                <rect key="frame" x="59" y="269" width="297" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
                                 <color key="textColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-Jp-0n2">
-                                <rect key="frame" x="176" y="442" width="63" height="30"/>
+                                <rect key="frame" x="160" y="430" width="94" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="Attendee">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="MWy-my-Gfb" kind="show" id="Two-FM-tfV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-Id-bvL">
-                                <rect key="frame" x="160" y="517" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photographer">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oq6-3K-i8Y" kind="show" id="WPI-nH-qB9"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xy4-sm-b5E">
@@ -664,8 +682,9 @@ What to do if you believe your rights have been violated
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFg-Is-n1U">
-                                <rect key="frame" x="172" y="362" width="67" height="30"/>
+                                <rect key="frame" x="160" y="353" width="100" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="Organizer">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -673,8 +692,19 @@ What to do if you believe your rights have been violated
                                     <segue destination="Zfu-nH-zQd" kind="show" id="9D1-wM-Fm5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-Id-bvL">
+                                <rect key="frame" x="139" y="499" width="142" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <state key="normal" title="Photographer">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oq6-3K-i8Y" kind="show" id="WPI-nH-qB9"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="p62-es-VHO"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -689,7 +719,7 @@ What to do if you believe your rights have been violated
             <objects>
                 <viewController title="Attendee Protest VC" id="MWy-my-Gfb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cq-LY-VE6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-CB-UIh">
@@ -722,7 +752,7 @@ What to do if you believe your rights have been violated
             <objects>
                 <viewController title="Photographer VC" id="oq6-3K-i8Y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GWx-UT-CMr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuM-hl-CiJ">
@@ -755,29 +785,27 @@ What to do if you believe your rights have been violated
             <objects>
                 <viewController title="FamilyViewConroller" id="0A8-2r-Klo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WeQ-Ci-4dB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Stay calm, everything will be alright                                           " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmv-w5-R3z">
-                                <rect key="frame" x="20" y="116" width="314" height="152"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Stay calm, everything will be alright                                           " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmv-w5-R3z">
+                                <rect key="frame" x="20" y="157" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-9f-RK4">
-                                <rect key="frame" x="20" y="248" width="615" height="151"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ In the &quot;best-case-senario they will be let go in time with a desk appearance ticket for &quot;unlawful assembly&quot;" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-9f-RK4">
+                                <rect key="frame" x="20" y="277" width="374" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤ In the "best-case-senario they will be let go in time with a desk appearance ticket for "unlawful assembly"
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Get to the Police Station as soon as possibble" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-1a-JaU">
-                                <rect key="frame" x="20" y="215" width="411" height="97"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Get to the Police Station as soon as possibble" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-1a-JaU">
+                                <rect key="frame" x="20" y="215" width="374" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -798,24 +826,24 @@ What to do if you believe your rights have been violated
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-qh-Xyj">
-                                <rect key="frame" x="20" y="426" width="294" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-qh-Xyj">
+                                <rect key="frame" x="20" y="441" width="374" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">➤ When calling for a lawyer or legal help make sure all your relatives's rights are in place
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Make sure that you have a list of lawyers (in resources) with you at all times to keep you from false accusations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVe-1L-ZTU">
-                                <rect key="frame" x="10" y="344" width="314" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Make sure that you have a list of lawyers (in resources) with you at all times to keep you from false accusations" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVe-1L-ZTU">
+                                <rect key="frame" x="20" y="347" width="374" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="EvI-9v-r7k"/>
                     </view>
@@ -829,14 +857,16 @@ What to do if you believe your rights have been violated
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qKL-j3-YEg"/>
-        <segue reference="ZKi-mN-DaJ"/>
-        <segue reference="9KW-Sp-UdL"/>
-        <segue reference="io5-n4-ORK"/>
+        <segue reference="BSz-mm-qE1"/>
+        <segue reference="POZ-hU-MMF"/>
+        <segue reference="HQG-RL-8re"/>
+        <segue reference="POg-oL-iqi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Screen Shot 2020-06-24 at 4.26.41 PM" width="834" height="478"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="doc.on.doc" catalog="system" width="117" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
     </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036290CB24A4FF4B00A1DCB4 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 036290CA24A4FF4B00A1DCB4 /* Montserrat */; };
 		0370AAA224A3F9B000CE496C /* AccusedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370AAA124A3F9B000CE496C /* AccusedViewController.swift */; };
 		0370AAA424A3FE7A00CE496C /* VocabularyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370AAA324A3FE7A00CE496C /* VocabularyViewController.swift */; };
 		9D2DFD5D24A2536D00EECE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036290CA24A4FF4B00A1DCB4 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		0370AAA124A3F9B000CE496C /* AccusedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccusedViewController.swift; sourceTree = "<group>"; };
 		0370AAA324A3FE7A00CE496C /* VocabularyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyViewController.swift; sourceTree = "<group>"; };
 		9D2DFD5924A2536D00EECE43 /* Help Me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Help Me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036290C924A4FF3200A1DCB4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				036290CA24A4FF4B00A1DCB4 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9D2DFD5024A2536D00EECE43 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		9D2DFD5B24A2536D00EECE43 /* FInal Project */ = {
 			isa = PBXGroup;
 			children = (
+				036290C924A4FF3200A1DCB4 /* Fonts */,
 				F1733F9224A4CA150025EBF9 /* ChecklistTableViewController.swift */,
 				F1DD9E0624A4E059002D1434 /* ToDoTableViewController.swift */,
 				F1DD9E0724A4E059002D1434 /* ToDoTableViewController.xib */,
@@ -250,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036290CB24A4FF4B00A1DCB4 /* Montserrat in Resources */,
 				9D2DFD6C24A2537200EECE43 /* LaunchScreen.storyboard in Resources */,
 				F1DD9E0924A4E059002D1434 /* ToDoTableViewController.xib in Resources */,
 				9D2DFD6924A2537200EECE43 /* Assets.xcassets in Resources */,
