@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-LB-P7o">
                                 <rect key="frame" x="20" y="262" width="373" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">We want you to know that you are not alone 
+                                <string key="text">We want you to know that you are not alone
 and we are here to help you however we can. </string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -303,7 +303,7 @@ and we are here to help you however we can. </string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-oq-8Wm">
                                 <rect key="frame" x="44" y="271" width="338" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤ If you can, obtain a lawyer quickly before you are officially charged with the crime. 
+                                <string key="text">➤ If you can, obtain a lawyer quickly before you are officially charged with the crime.
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -540,9 +540,6 @@ and we are here to help you however we can. </string>
                                     <navigationItem title="I am an organizer" id="cbQ-73-VIN">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Lcd-XF-aoV">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="0k3-a2-hkv" kind="show" id="uIj-sc-9dg"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -558,10 +555,6 @@ and we are here to help you however we can. </string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">➤ traditional public forums: you have the right to protest on any public property so long as you're not blocking access or interfering w private prop
-=======
-                                                <string key="text">Your rights:
-➤ traditional public forums: you have the right to protest on any public property so long as you're not blocking access or interfering w private prop
->>>>>>> Stashed changes
 ➤ Private prop owners set the rules of speech for their prop and the gov cannot control that. Basically as long as you have consent from the owner do whatever u want and the gov are in trouble if they try to do anything
 ➤ Police should be treating counter protesters and protestors equally. Allowed to separate the groups but groups should be within hearing and seeing distance
 ➤ U can photograph anything on public prop but again private prop owners make the rules
@@ -775,7 +768,7 @@ What to do if you believe your rights have been violated
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-9f-RK4">
                                 <rect key="frame" x="20" y="248" width="615" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤ In the "best-case-senario they will be let go in time with a desk appearance ticket for "unlawful assembly" 
+                                <string key="text">➤ In the "best-case-senario they will be let go in time with a desk appearance ticket for "unlawful assembly"
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -836,7 +829,6 @@ What to do if you believe your rights have been violated
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uIj-sc-9dg"/>
         <segue reference="qKL-j3-YEg"/>
         <segue reference="ZKi-mN-DaJ"/>
         <segue reference="9KW-Sp-UdL"/>
