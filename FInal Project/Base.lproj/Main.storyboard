@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,13 +120,6 @@ and we are here to help you however we can. </string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-wY-Amu">
-                                <rect key="frame" x="186" y="711" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZc-ch-1U5">
                                 <rect key="frame" x="144" y="282" width="132" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,6 +127,9 @@ and we are here to help you however we can. </string>
                                 <state key="normal" title="I am a protestor ">
                                     <color key="titleColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0k3-a2-hkv" kind="show" id="U6F-sD-fRM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-Vh-kQg">
                                 <rect key="frame" x="88" y="346" width="239" height="35"/>
@@ -149,6 +145,9 @@ and we are here to help you however we can. </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="I am a family member of the accused "/>
+                                <connections>
+                                    <segue destination="0A8-2r-Klo" kind="show" id="x0E-T3-dhS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-05-owY">
                                 <rect key="frame" x="122" y="200" width="170" height="29"/>
@@ -157,6 +156,15 @@ and we are here to help you however we can. </string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Link" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oSa-N1-cK1">
+                                <rect key="frame" x="90" y="779" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,7 +174,7 @@ and we are here to help you however we can. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEx-OU-DiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="962"/>
+            <point key="canvasLocation" x="102.89855072463769" y="961.60714285714278"/>
         </scene>
         <!--WrongfullyAccusedViewController-->
         <scene sceneID="sc1-h8-YTa">
@@ -432,37 +440,259 @@ and we are here to help you however we can. </string>
             </objects>
             <point key="canvasLocation" x="1032" y="129"/>
         </scene>
+        <!--Organizerprotest-->
+        <scene sceneID="2US-fP-J93">
+            <objects>
+                <viewController title="Organizerprotest" id="Zfu-nH-zQd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cob-C0-aYm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="top" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-cI-TsB">
+                                <rect key="frame" x="0.0" y="65" width="414" height="56"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="I am an organizer" id="cbQ-73-VIN">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Lcd-XF-aoV">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5W2-46-6jl">
+                                <rect key="frame" x="0.0" y="121" width="414" height="721"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-tN-faE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48I-pk-MRs">
+                                                <rect key="frame" x="39" y="26" width="336" height="705"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">➤ traditional public forums: you have the right to protest on any public property so long as you're not blocking access or interfering w private prop
+➤ Private prop owners set the rules of speech for their prop and the gov cannot control that. Basically as long as you have consent from the owner do whatever u want and the gov are in trouble if they try to do anything
+➤ Police should be treating counter protesters and protestors equally. Allowed to separate the groups but groups should be within hearing and seeing distance
+➤ U can photograph anything on public prop but again private prop owners make the rules
+
+Do I need a permit?
+➤ Events that block traffic,close streets,have a size over parks/plazas, or use sound amplifying devices need a permit
+➤ While certain permit procedures require submitting an application well in advance of the planned event, police can’t use those procedures to prevent a protest in response to breaking news events.
+➤ Restrictions on the route of a march or sound equipment might violate the First Amendment if they are unnecessary for traffic control or public safety, or if they interfere significantly with effective communication to the intended audience.
+➤ A permit cannot be denied because the event is controversial or will express unpopular views.
+➤ If the permit regulations that apply to your protest require a fee for a permit, they should allow a waiver for those who cannot afford the charge.
+➤ Permits cost 25.50 in nyc but you can get a waiver if u cannot afford
+
+What to do if you believe your rights have been violated
+➤ When you can, write down everything you remember, including the officers’ badge and patrol car numbers and the agency they work for.
+➤ Get contact information for witnesses.
+➤ Take photographs of any injuries.
+➤ Once you have all of this information, you can file a written complaint with the agency’s internal affairs division or civilian complaint board.
+</mutableString>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="U1x-0G-id0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1ig-tN-faE" firstAttribute="width" secondItem="Bff-22-ahs" secondAttribute="width" id="7mp-a8-xLy"/>
+                                    <constraint firstItem="1ig-tN-faE" firstAttribute="trailing" secondItem="L7N-bI-5cW" secondAttribute="trailing" constant="414" id="ARc-Zf-cfB"/>
+                                    <constraint firstItem="1ig-tN-faE" firstAttribute="leading" secondItem="L7N-bI-5cW" secondAttribute="leading" id="dKF-ef-vZZ"/>
+                                    <constraint firstItem="1ig-tN-faE" firstAttribute="top" secondItem="L7N-bI-5cW" secondAttribute="top" id="eJS-4f-MP0"/>
+                                    <constraint firstItem="1ig-tN-faE" firstAttribute="bottom" secondItem="L7N-bI-5cW" secondAttribute="bottom" id="rhX-54-s5v"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="L7N-bI-5cW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Bff-22-ahs"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5W2-46-6jl" firstAttribute="top" secondItem="Gjd-cI-TsB" secondAttribute="bottom" id="4xQ-ZX-xMv"/>
+                            <constraint firstItem="5W2-46-6jl" firstAttribute="trailing" secondItem="laO-5p-T4V" secondAttribute="trailing" id="57H-XK-ZI4"/>
+                            <constraint firstItem="5W2-46-6jl" firstAttribute="leading" secondItem="laO-5p-T4V" secondAttribute="leading" id="9v2-76-hsS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5W2-46-6jl" secondAttribute="bottom" id="GRU-Qu-r3Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laO-5p-T4V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t8K-wU-hhh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eN-x6-RPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368.1159420289855" y="1737.7232142857142"/>
+        </scene>
+        <!--I am a protestor-->
+        <scene sceneID="msO-ZG-dEG">
+            <objects>
+                <viewController title="I am a protestor" id="0k3-a2-hkv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cn4-su-vuS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What was your role?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I2-Nd-C8h">
+                                <rect key="frame" x="89" y="260" width="237" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <color key="textColor" red="0.78002175740000002" green="0.10428670549999999" blue="0.162787667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-Jp-0n2">
+                                <rect key="frame" x="176" y="442" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Attendee">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MWy-my-Gfb" kind="show" id="Two-FM-tfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-Id-bvL">
+                                <rect key="frame" x="160" y="517" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Photographer">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oq6-3K-i8Y" kind="show" id="WPI-nH-qB9"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xy4-sm-b5E">
+                                <rect key="frame" x="0.0" y="62" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="I am a Protestor " id="ULg-85-dlY">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="ge7-UA-bJx">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="XXj-xm-u9V" kind="show" id="00k-Fz-0J2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFg-Is-n1U">
+                                <rect key="frame" x="172" y="362" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Organizer">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zfu-nH-zQd" kind="show" id="9D1-wM-Fm5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="p62-es-VHO"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="4eN-Tc-agK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0a-mR-mbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517.39130434782612" y="1738.3928571428571"/>
+        </scene>
+        <!--Attendee Protest VC-->
+        <scene sceneID="pyO-EX-A15">
+            <objects>
+                <viewController title="Attendee Protest VC" id="MWy-my-Gfb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Cq-LY-VE6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-CB-UIh">
+                                <rect key="frame" x="0.0" y="87" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="I am an attendee " id="8GO-UF-jd1">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="RfP-fT-ZQT">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UOU-XO-paZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lnH-gF-2d8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRn-a5-I6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1336" y="2520"/>
+        </scene>
+        <!--Photographer VC-->
+        <scene sceneID="WGb-ht-nhz">
+            <objects>
+                <viewController title="Photographer VC" id="oq6-3K-i8Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GWx-UT-CMr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuM-hl-CiJ">
+                                <rect key="frame" x="0.0" y="91" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="I am a photographer " id="bQP-Ap-ZCw">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="my8-ZA-g7w">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95763808490000002" green="0.9229491353" blue="0.85104101899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Y9l-hf-ZWe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZXy-zk-pVn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txs-mc-psl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="2520"/>
+        </scene>
         <!--FamilyViewConroller-->
         <scene sceneID="IZm-oQ-XzO">
             <objects>
                 <viewController title="FamilyViewConroller" id="0A8-2r-Klo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WeQ-Ci-4dB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmv-w5-R3z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Stay calm, everything will be alright                                           " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmv-w5-R3z">
                                 <rect key="frame" x="20" y="116" width="314" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="➤ Stay calm, everything will be alright                                           ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-9f-RK4">
                                 <rect key="frame" x="20" y="248" width="615" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤In the "best-case-senario they will be let go in time with a desk appearance ticket for "unlawful assembly" 
+                                <string key="text">➤ In the "best-case-senario they will be let go in time with a desk appearance ticket for "unlawful assembly" 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤Get to the Police Station as soon as possibble" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-1a-JaU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➤ Get to the Police Station as soon as possibble" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-1a-JaU">
                                 <rect key="frame" x="20" y="215" width="411" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -478,14 +708,18 @@ and we are here to help you however we can. </string>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Advice For Family Member of Accused" id="CHK-zk-5hq">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="tIH-K3-GMT"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="tIH-K3-GMT">
+                                            <connections>
+                                                <segue destination="XXj-xm-u9V" kind="show" id="9KW-Sp-UdL"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-qh-Xyj">
                                 <rect key="frame" x="20" y="426" width="294" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">➤When calling for a lawyer or legal help make sure all your relatives's rights are in place
+                                <string key="text">➤ When calling for a lawyer or legal help make sure all your relatives's rights are in place
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -504,6 +738,7 @@ and we are here to help you however we can. </string>
                         <viewLayoutGuide key="safeArea" id="EvI-9v-r7k"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="kKB-AY-4ot"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ul-ur-r9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -511,15 +746,15 @@ and we are here to help you however we can. </string>
             <point key="canvasLocation" x="604.34782608695662" y="1729.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Screen Shot 2020-06-24 at 4.26.41 PM" width="834" height="478"/>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qKL-j3-YEg"/>
-        <segue reference="POZ-hU-MMF"/>
-        <segue reference="uRT-tt-sh9"/>
-        <segue reference="io5-n4-ORK"/>
+        <segue reference="ZKi-mN-DaJ"/>
+        <segue reference="00k-Fz-0J2"/>
+        <segue reference="POg-oL-iqi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="Screen Shot 2020-06-24 at 4.26.41 PM" width="834" height="478"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
 </document>
