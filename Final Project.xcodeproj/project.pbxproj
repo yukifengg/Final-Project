@@ -18,6 +18,9 @@
 		9D2DFD6C24A2537200EECE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2DFD6A24A2537200EECE43 /* LaunchScreen.storyboard */; };
 		9D2DFD7724A2537300EECE43 /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD7624A2537300EECE43 /* Final_ProjectTests.swift */; };
 		9D2DFD8224A2537300EECE43 /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD8124A2537300EECE43 /* Final_ProjectUITests.swift */; };
+		F1733F9324A4CA150025EBF9 /* ChecklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1733F9224A4CA150025EBF9 /* ChecklistTableViewController.swift */; };
+		F1DD9E0824A4E059002D1434 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD9E0624A4E059002D1434 /* ToDoTableViewController.swift */; };
+		F1DD9E0924A4E059002D1434 /* ToDoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DD9E0724A4E059002D1434 /* ToDoTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		9D2DFD7D24A2537300EECE43 /* Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2DFD8124A2537300EECE43 /* Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		9D2DFD8324A2537300EECE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1733F9224A4CA150025EBF9 /* ChecklistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewController.swift; sourceTree = "<group>"; };
+		F1DD9E0624A4E059002D1434 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		F1DD9E0724A4E059002D1434 /* ToDoTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 		9D2DFD5B24A2536D00EECE43 /* FInal Project */ = {
 			isa = PBXGroup;
 			children = (
+				F1733F9224A4CA150025EBF9 /* ChecklistTableViewController.swift */,
+				F1DD9E0624A4E059002D1434 /* ToDoTableViewController.swift */,
+				F1DD9E0724A4E059002D1434 /* ToDoTableViewController.xib */,
 				9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */,
 				9D2DFD5E24A2536D00EECE43 /* SceneDelegate.swift */,
 				9D2DFD6024A2536D00EECE43 /* ViewController.swift */,
@@ -242,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2DFD6C24A2537200EECE43 /* LaunchScreen.storyboard in Resources */,
+				F1DD9E0924A4E059002D1434 /* ToDoTableViewController.xib in Resources */,
 				9D2DFD6924A2537200EECE43 /* Assets.xcassets in Resources */,
 				9D2DFD6424A2536D00EECE43 /* Main.storyboard in Resources */,
 			);
@@ -271,7 +281,9 @@
 				0370AAA224A3F9B000CE496C /* AccusedViewController.swift in Sources */,
 				9D2DFD6124A2536D00EECE43 /* ViewController.swift in Sources */,
 				0370AAA424A3FE7A00CE496C /* VocabularyViewController.swift in Sources */,
+				F1733F9324A4CA150025EBF9 /* ChecklistTableViewController.swift in Sources */,
 				9D2DFD5D24A2536D00EECE43 /* AppDelegate.swift in Sources */,
+				F1DD9E0824A4E059002D1434 /* ToDoTableViewController.swift in Sources */,
 				9D2DFD6724A2536D00EECE43 /* Final_Project.xcdatamodeld in Sources */,
 				9D2DFD5F24A2536D00EECE43 /* SceneDelegate.swift in Sources */,
 			);
