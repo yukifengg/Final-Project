@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "activist-being-stopped-arrested-riot-police-resistance-strike-hand-drawn-young-man-activist-being-stopped-185457842.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
