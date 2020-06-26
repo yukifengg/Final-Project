@@ -10,6 +10,7 @@
 		036290CB24A4FF4B00A1DCB4 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 036290CA24A4FF4B00A1DCB4 /* Montserrat */; };
 		0370AAA224A3F9B000CE496C /* AccusedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370AAA124A3F9B000CE496C /* AccusedViewController.swift */; };
 		0370AAA424A3FE7A00CE496C /* VocabularyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370AAA324A3FE7A00CE496C /* VocabularyViewController.swift */; };
+		03E4E89124A61FB9007054DC /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E4E89024A61FB9007054DC /* FamilyViewController.swift */; };
 		9D2DFD5D24A2536D00EECE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */; };
 		9D2DFD5F24A2536D00EECE43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD5E24A2536D00EECE43 /* SceneDelegate.swift */; };
 		9D2DFD6124A2536D00EECE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DFD6024A2536D00EECE43 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		036290CA24A4FF4B00A1DCB4 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		0370AAA124A3F9B000CE496C /* AccusedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccusedViewController.swift; sourceTree = "<group>"; };
 		0370AAA324A3FE7A00CE496C /* VocabularyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyViewController.swift; sourceTree = "<group>"; };
+		03E4E89024A61FB9007054DC /* FamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
 		9D2DFD5924A2536D00EECE43 /* Help Me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Help Me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2DFD5C24A2536D00EECE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2DFD5E24A2536D00EECE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				9D2DFD6524A2536D00EECE43 /* Final_Project.xcdatamodeld */,
 				0370AAA124A3F9B000CE496C /* AccusedViewController.swift */,
 				0370AAA324A3FE7A00CE496C /* VocabularyViewController.swift */,
+				03E4E89024A61FB9007054DC /* FamilyViewController.swift */,
 			);
 			path = "FInal Project";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				F1733F9324A4CA150025EBF9 /* ChecklistTableViewController.swift in Sources */,
 				9D2DFD5D24A2536D00EECE43 /* AppDelegate.swift in Sources */,
 				F1DD9E0824A4E059002D1434 /* ToDoTableViewController.swift in Sources */,
+				03E4E89124A61FB9007054DC /* FamilyViewController.swift in Sources */,
 				9D2DFD6724A2536D00EECE43 /* Final_Project.xcdatamodeld in Sources */,
 				9D2DFD5F24A2536D00EECE43 /* SceneDelegate.swift in Sources */,
 			);

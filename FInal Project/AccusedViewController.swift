@@ -16,7 +16,10 @@ class AccusedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func visitProBonoButton(_ sender: Any) {
+        UIApplication.shared.open(URL(string:"https://www.justia.com/lawyers/criminal-law/new-york/new-york-city/legal-aid-and-pro-bono-services")! as URL, options: [:], completionHandler: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
